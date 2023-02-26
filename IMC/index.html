@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title class="title">Calcule seu IMC</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Calcule seu IMC</h1>
+      </div>
+    
+    </header>
+    <main>
+      <section class="container">
+        <table>
+          <thead>
+            <tr>
+              <th class="imc-label">Nome</th>
+              <th class="imc-label">Peso</th>
+              <th class="imc-label">Altura</th>
+              <th class="imc-label">Gordura</th>
+              <th class="imc-label">IMC</th>
+              <tr class="paciente invisivel"></tr>
+            </tr>
+          </thead>
+          <tbody id="tabela-pacientes"></tbody>
+        </table>
+      </section>
+    </main>
+    <div id="mensagem"></div>
+    <section class="container2">
+      <div class="traco"></div>
+      <form id="form-adiciona">
+        <div class="grupo">
+          <label class="label" for="nome">Nome:</label>
+          <input id="nome" name="nome" type="text" placeholder="Digite o seu nome" class="campo"required>
+        </div>
+        <div class="grupo">
+          <label class="label label2" for="peso">Peso:&nbsp; <p class="txt"> (ex: 80)</p> </label>
+          <input id="peso" name="peso" type="text" placeholder="Digite o seu peso" class="campo campo-medio"required>
+        </div>
+        <div class="grupo">
+          <label class="label label2" for="altura">Altura:&nbsp; <p class="txt">  (ex: 1.75)</p></label>
+          <input id="altura" name="altura" type="text" placeholder="Digite a sua altura" class="campo campo-medio" required>
+        </div>
+        <div class="grupo">
+          <label class="label" for="gordura">% de Gordura:&nbsp; <p class="txt">  (ex: 10%)</p></label>
+          <input id="gordura" type="text" placeholder="Digite a sua porcentagem de gordura" class="campo campo-medio">
+        </div>
+        <button  id="adicionar-paciente" class="botao bto-principal">Calcular</button>
+      </form>
+      <div id="mensagem"></div>
+      <br><br><br>
+      
+      
+<section class="container3">
+  <h3 class="titulo-Container3">Valores de referência para o IMC</h3>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Categoria</th>
+        <th>IMC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Abaixo do peso</td>
+        <td>Menos de 18,5</td>
+      </tr>
+      <tr>
+        <td>Peso normal</td>
+        <td>18,5 - 24,9</td>
+      </tr>
+      <tr>
+        <td>Sobrepeso</td>
+        <td>25,0 - 29,9</td>
+      </tr>
+      <tr>
+        <td>Obesidade grau I</td>
+        <td>30,0 - 34,9</td>
+      </tr>
+      <tr>
+        <td>Obesidade grau II</td>
+        <td>35,0 - 39,9</td>
+      </tr>
+      <tr>
+        <td>Obesidade grau III</td>
+        <td>40,0 ou mais</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

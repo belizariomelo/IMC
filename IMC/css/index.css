@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  background-color: #dce7ee;
+  font-weight: 600;
+}
+
+header {
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #323232 0,
+    #566274 50%,
+    #00294a 100%
+  );
+  height: 3em;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+header h1 {
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+header h2 {
+  font-size: 2em;
+  display: flex;
+  vertical-align: middle;
+}
+
+header .container:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  margin: 0% 20%;
+}
+
+section {
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+section h2 {
+  font-size: 3em;
+  display: block;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #0e0d0d;
+  margin-bottom: 0.5em;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 0.5em;
+  table-layout: fixed;
+}
+
+td,
+th {
+  padding: 0.5em;
+  margin: 0;
+  border: 2px solid #000000;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: #aeacac;
+}
+
+label {
+  color: #555;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.campo {
+  margin: 0;
+  padding-bottom: 1em;
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 0.7em;
+  width: 100%;
+}
+
+.campo-medio {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.grupo {
+  width: 32%;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: 1.5px solid rgb(97, 96, 96);
+  border-bottom: 2px solid;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 0;
+  margin-top: -5px;
+  color: #fff;
+  background-color: #0c8cd3;
+  border-color: #04324c;
+  display: block;
+  clear: both;
+  margin: 20px 0px;
+}
+
+button:active {
+  margin-top: 10px 10px;
+  border: 1px;
+}
+.adicionar-paciente {
+  margin-top: 0px;
+}
+.grupo {
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+#adicionar-paciente {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+}
+.campo,
+.campo-medio {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0e0d0d;
+  text-align: center;
+  font-size: 16px;
+}
+.label {
+  display: flex;
+  color: #2c2b2b;
+  font-weight: bolder;
+  justify-content: center;
+  font-size: 15px;
+}
+.traco {
+  border: 1px solid rgb(0, 0, 0);
+}
+input,
+textarea {
+  caret-color: rgb(17, 0, 0);
+}
+form {
+  background-color: #dde4e4;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando os campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilizando o botão de envio */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Estilizando a área de mensagens */
+.message {
+  font-size: 16px;
+  color: #4caf50;
+  text-align: center;
+}
+
+/* Estilizando mensagens de erro */
+.error {
+  font-size: 16px;
+  color: #f44336;
+  text-align: center;
+}
+
+/* Centralizando o formulário na tela */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mensagem {
+  margin: 0.5%;
+  color: #9b3737;
+  font-size: 16px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.label2 {
+  padding-left: 6%;
+}
+.txt {
+  color: #082741;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+td.info-imc {
+  background-color: #5c5b5b;
+  color: #ffffff;
+  font-size: 16px;
+}
+div.erro {
+  color: #c03c3c;
+  font-weight: 800;
+}
+.titulo-Container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container3 {
+  width: 50%;
+  margin-left: 25%;
+}
+
+table .animate__fadeOut {
+  opacity: 0;
+  transition: 0.5s;
+}
+#filtrar-tabela {
+  width: 200px;
+  height: 32px;
+}
+.invisivel {
+  display: none;
+}
+@media (max-width: 767px) {
+  header {
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    display: block;
+    margin: 0;
+  }
+
+  header h2 {
+    font-size: 1.2em;
+    display: block;
+    margin: 0;
+  }
+
+  .container {
+    width: auto;
+    margin: 0 auto;
+    font-size: small;
+  }
+  .imc-label {
+    font-size: 0.7rem;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+
+  .campo,
+  .campo-medio {
+    font-size: 14px;
+  }
+
+  .grupo {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #adicionar-paciente {
+    width: 90%;
+    left: 5%;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+  }
+  .titulo-Container3 {
+    padding-top: 6%;
+    font-size: 1em;
+    text-align: center;
+  }
+}
